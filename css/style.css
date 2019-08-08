@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background: violet; /* color names*/	
+	background: rgba(224,15,15,0.3); /* red, blue, green, alpha(opacity)*/
+	background: hsla(0,87%,47%,0.6); /* hue, saturation, lightness, alpha (opacity)*/
+	background: #ECD6E9; /* hex code using hash */
+	background-image: url('../images/mydesign.svg'); /* imported from sketch – your own design */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom right;    	
+	font-family: 'Roboto', sans-serif; /* font from Google */
+}
+
+.myImages{
+	width: 70%;
+	margin:0 auto;
+	display:block;
+	margin:auto;
+}
+h1{
+	text-align: center;
+	margin:20px;
+	display:block;
+}
+.row{
+	width:100%;
+	height: auto;
+	/*border: 2px solid white;*/
+}
+.col{
+	width: 30%;
+	/*height: 100%;*/
+	float:left;
+	padding: 70px 40px;
+	/*border: 2px solid blue;*/
+	margin: 0 1%;
+
+}
+.row::after{
+	clear:both;
+}
+.myPara{
+	font-size: 20px;
+	margin: 20px 0;
+	padding-left: 15%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+	/*Responsiveness – media queries */
+@media only screen and (max-width: 1000px){
+
+	.col{
+		width: 46%;	
+	}
+}
+
+/*phones and tabs*/
+@media only screen and (max-width: 600px){
+	.col{
+		width:100%;
+	}
+}
+
+
+
